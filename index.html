@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Fire Base</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600,700" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="login_div" class="main-div">
+            <h3>Firebase Web Login</h3>
+            <input type="email" placeholder="Email..." id="email_field"/>
+            <input type="password" placeholder="Password..." id="password_field"/>
+
+            <button onclick="login()">Log in As an Admin</button>
+
+        </div>
+
+        <div id="user_div" class="loggedin-div">
+            <h3>Welcome Admin</h3>
+            <p id="user_para">Welcome to Firebase Login. You are currently logged in!</p>
+            <button onclick="logout()">Log Out</button>
+        </div>
+
+
+        <!-- Fire base ka naam hai MY project -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+     // Initialize Firebase
+     var config = {
+    apiKey: "AIzaSyBf2OSCwozy17BeTgXj2jwglfGndWyq6X0",
+    authDomain: "protean-fabric-151311.firebaseapp.com",
+    databaseURL: "https://protean-fabric-151311.firebaseio.com",
+    projectId: "protean-fabric-151311",
+    storageBucket: "protean-fabric-151311.appspot.com",
+    messagingSenderId: "423823035290"
+    };
+     firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+
+    </body>
+</html>
