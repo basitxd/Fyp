@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-variant: small-caps;
+            background-color: #66CCFF;
+        }
+        body{
+            background-color: #66CCFF;
+        }
+        /* body{
+            
+            background-image: url("background-image.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.2; filter: alpha(opacity=20);
+                        
+        } */
+        .logo {
+            
+        }
+        .logo > *{
+            background-color: #fff;
+        }
+        .container{
+            margin-top: 50px;
+           /* background-image: url("background-image.png");
+            background-repeat: no-repeat;
+            background-position: center;*/
+
+            background-color: #fff;
+            width: 50%;
+            box-shadow: -2px 1px 15px rgba(0, 0, 0, 0.5);
+            transition: 700ms;
+            border-radius: 6%;
+            
+            
+        }
+        .container > *{
+            background-color: #fff;
+        }
+        .container label,.container form i,.container h2{background-color: #fff;}
+        .container img{
+            float:right;
+        }
+        .container:hover{
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
+        }
+        .btn{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+        
+    <div class="container">
+        <div class="logo">
+             <img src="./background-image.png" width="200" height="200" alt=""> <h1 style="padding: 50px 0px 0px 50px; font-size: 5rem;">Smart School System</h1>  
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="page-header">
+            <h2>Join Our School</h2>
+        </div>
+        <br>
+        <form>
+            <label><i class="fa fa-user"></i> Fullname</label>
+            <input type="text" name="username" class="form-control" placeholder="Enter Username" id="" required="">
+            <br>
+            <label><i class="fa fa-user"></i> Username</label>
+            <input type="text" name="username" class="form-control" placeholder="Enter Username" id="" required="">
+            <br>
+            <label><i class="fa fa-key"></i> Password</label>
+            <input type="pass" name="pass" class="form-control" placeholder="Enter Password" id="" required="">
+            <br>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <hr>
+        <h5 style="margin-left: 20px;">Already have a Account? Login <a href="login.php">Here</a></h5>
+    </div>
+</body>
+</html>
